@@ -4,6 +4,7 @@ import skilstak.colors as c
 import time as t
 
 """Hello-3 Types Of Hello Program """
+
 def multi():
     """Hello World Las Vegas Style Baby"""
     while True:
@@ -15,11 +16,24 @@ def color():
     print(c.rc() + "Hello World" + c.reset, end=" ")
 
 def hello():
-    """Prints a random hello world"""
-    print(c.clear + c.rc + c.reset +"Hello World")
-
+    """a random hello world"""
+    print(c.clear + c.rc + c.reset +"Hello World") 
 if __name__ == '__main__':
-    #hello()
-    color()
-    #multi()
-
+    try:
+        #hello()
+        #color()
+        multi()
+    except KeyboardInterrupt:
+        print(c.clear + c.base00 + '''
+               _________
+            __|__|_____| ''' + c.green + '''
+          /  Holy  \ 
+         /   Hand   \ 
+        /  Granada   \ 
+       |     of      |
+       |   the holy  |
+        \    Grail  /
+         \_________/       
+                
+                ''')
+        exit()
